@@ -1,4 +1,4 @@
-/* reset from Kevin Powell edit if you like */
+/* reset from Kevin Powell*/
 
 /* makes sizing simpler */
 *,
@@ -425,43 +425,33 @@ body {
 .footer__about {
     max-width: 45ch;
 }
-  /* .logo-container {
-    display: flex;
-    align-items: center;
-    line-height: 1rem;
 
-    p {
-      margin: 0;
-    }
+.footer__about .logo {
+  margin-bottom: 2rem;
+}
 
-  }
+.footer__about .logo:hover {
+  text-decoration: none;
+  color: var(--clr-green-800)
+}
 
-  img {
-    width: 3rem;
-    height: 3rem;
-    border: 1px solid;
-  }
+.footer__about address p {
+  margin: 1rem 0;
+  font-weight: var(--fw-600);
+}
 
-  .logo-title {
-      font-size: var(--fs-500);
-      font-weight: var(--fw-500);
-      margin-left: 1rem;
-      text-transform: uppercase;
-    }
+.footer__nav-list {
+  list-style: none;
+  line-height: 2.5rem;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-500);
+}
 
-  ul{
-    list-style: none;
-    line-height: 2.5rem;
-    font-size: var(--fs-400);
-    font-weight: var(--fw-500);
+.footer__nav-list a {
+  color: var(--clr-neutral-100);
+}
 
-    a {
-      color: var(--clr-accent-light-1)
-    }
-
-    a:hover {
+.footer__nav-list a:hover {
       text-decoration: none;
-      color: var(--clr-green-800);
-    }
-  }
-}  */
+      color: var(--clr-green-800)
+}
