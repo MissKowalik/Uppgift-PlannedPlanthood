@@ -44,12 +44,12 @@ h6 {
   text-wrap: balance;
 }
 
-p,
+/* p,
 li,
 figcaption {
   text-wrap: pretty;
   max-width: 55ch;
-}
+} */
 
 /* for container queries, landmarks as containers */
 body > :is(header, footer),
@@ -405,8 +405,10 @@ body {
 
 .card {
   background: var(--clr-primary-light-1);
-  padding: 1.5rem;
+  padding: 1rem;
+  height: 100%;
 }
+
 
 .card__tags {
   list-style: none;
@@ -414,6 +416,74 @@ body {
   gap: .5rem;
   flex-wrap: wrap;
 }
+
+.card__tag {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  border-radius: 1rem;
+  padding: 2px 6px;
+}
+
+/* tag colors */
+.robust {
+  background-color: var(--clr-robust);
+}
+
+.green {
+  background-color: var(--clr-green);
+}
+
+.flower {
+    background-color: var(--clr-flower);
+  }
+
+.colorful {
+  background-color: var(--clr-colorful);
+}
+
+.sunloving {
+  background-color: var(--clr-sunloving);
+}
+
+.air {
+  background-color: var(--clr-air);
+}
+
+.decorative {
+  background-color: var(--clr-decorative);
+}
+
+.edible {
+  background-color: var(--clr-edible);
+}
+
+.easy {
+  background-color: var(--clr-easy);
+}
+
+.fragrant {
+  background-color: var(--clr-fragrant);
+}
+
+.fast {
+  background-color: var(--clr-fast);
+}
+
+
+.card__meta {
+  display: flex;
+}
+
+.card__profile {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--clr-neutral-900);
+  border-radius: 50%;
+}
+
+
 
 /* === PREVIOUS CROPS SECTION === */
 .previous-crops {
