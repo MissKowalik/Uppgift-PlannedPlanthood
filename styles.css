@@ -342,6 +342,31 @@ body {
 
 
 
+/* === CARD GALLERY === */
+.card-grid {
+  max-width: 1080px;
+  margin: 3rem auto;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  background: var(--clr-primary-light-1);
+  padding: 1.5rem;
+}
+
+.card__tags {
+  list-style: none;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
 
 /* === PREVIOUS CROPS SECTION === */
 .previous-crops {
@@ -435,9 +460,10 @@ body {
   color: var(--clr-green-800)
 }
 
-.footer__about address p {
+.footer__about address {
   margin: 1rem 0;
   font-weight: var(--fw-600);
+  line-height: 2;
 }
 
 .footer__nav-list {
