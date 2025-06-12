@@ -423,7 +423,7 @@ body {
   font-weight: var(--fw-500);
   text-transform: uppercase;
   border-radius: 1rem;
-  padding: 2px 6px;
+  padding: .25rem .5rem;
 }
 
 /* tag colors */
