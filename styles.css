@@ -440,48 +440,48 @@ body {
   padding: .25rem .5rem;
 }
 
-/* tag colors */
-.robust {
+/* card data-tags */
+.card__tag[data-tag="robust"] {
   background-color: var(--clr-robust);
 }
 
-.green {
+.card__tag[data-tag="green"] {
   background-color: var(--clr-green);
 }
 
-.flower {
+.card__tag[data-tag="flower"] {
     background-color: var(--clr-flower);
   }
 
-.colorful {
+.card__tag[data-tag="colorful"] {
   background-color: var(--clr-colorful);
 }
 
-.sunloving {
+.card__tag[data-tag="sunloving"] {
   background-color: var(--clr-sunloving);
 }
 
-.air {
+.card__tag[data-tag="air"] {
   background-color: var(--clr-air);
 }
 
-.decorative {
+.card__tag[data-tag="decorative"] {
   background-color: var(--clr-decorative);
 }
 
-.edible {
+.card__tag[data-tag="edible"] {
   background-color: var(--clr-edible);
 }
 
-.easy {
+.card__tag[data-tag="easy"] {
   background-color: var(--clr-easy);
 }
 
-.fragrant {
+.card__tag[data-tag="fragrant"] {
   background-color: var(--clr-fragrant);
 }
 
-.fast {
+.card__tag[data-tag="fast"] {
   background-color: var(--clr-fast);
 }
 
