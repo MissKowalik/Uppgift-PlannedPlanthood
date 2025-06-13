@@ -191,8 +191,8 @@ body {
   padding: 0.5rem 0;
 }
 
-.header__container {
-  max-width: 1080px;
+.main-nav {
+  max-width: 65ch;
   display: flex;
   justify-content: space-between;
   align-items: center;
