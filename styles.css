@@ -192,7 +192,7 @@ body {
 }
 
 .main-nav {
-  max-width: 1080px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,7 +227,7 @@ body {
 }
 
 .main-nav .nav__item a:hover,
-.header__container a:hover {
+.main-nav a:hover {
   color: var(--clr-green-800);
   text-decoration: none;
 }
@@ -237,7 +237,7 @@ body {
 
 /* === HERO SECTION === */
 .hero {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 3rem auto;
   text-align: center;
 }
@@ -308,7 +308,7 @@ body {
 }
 
 .banner__container {
-  max-width: 1080px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   gap: 5rem;
@@ -404,14 +404,14 @@ body {
 
 
 /* === CARD GALLERY === */
-.card-grid {
-  max-width: 1080px;
+.card-grid-wrapper {
+  max-width: 1200px;
   margin: 3rem auto;
 }
 
 .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
   gap: 1rem;
   list-style: none;
   padding: 0;
@@ -420,24 +420,29 @@ body {
 .card {
   background: var(--clr-primary-light-1);
   padding: 1rem;
-  height: 100%;
-}
 
+  grid-row: span 5;
+
+  display: grid;
+  grid-template-rows: subgrid;
+}
 
 .card__tags {
   list-style: none;
   display: flex;
   gap: .5rem;
+  align-items: start;
   flex-wrap: wrap;
 }
 
 .card__tag {
   color: var(--clr-neutral-100);
-  font-size: var(--fs-100);
+  font-size: var(--fs-200);
   font-weight: var(--fw-500);
   text-transform: uppercase;
   border-radius: 1rem;
   padding: .25rem .5rem;
+
 }
 
 /* card data-tags */
@@ -516,7 +521,7 @@ body {
 } 
 
 .footer__container {
-  max-width: 1080px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
