@@ -183,20 +183,20 @@ body {
 /* === HEADER STYLES === */
 .site-header {
   background-color: var(--clr-neutral-100);
-  color: var(--clr-green-400);
-  font-size: var(--fs-600);
-  font-weight: var(--fw-500);
-  text-transform: uppercase;
   width: 100%;
-  padding: 0.5rem 0;
 }
 
 .main-nav {
-  max-width: 1200px;
+  max-width: clamp(300px, 90vw, 1200px);
+  color: var(--clr-green-400);
+  font-size: clamp(var(--fs-400), 1.5vmax, var(--fs-700));
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding: 0.5rem 0;
 }
 
 .logo {
@@ -208,21 +208,21 @@ body {
 }
 
 .logo img {
-  width: 3rem;
-  height: 3rem;
+  width: clamp(1rem, 3vmax, 4rem);
+  height: auto;
   border-radius: 50%;
   background: var(--clr-green-400);
 }
 
 .logo__title {
   text-transform: uppercase;
-  line-height: 0.8;
-  font-size: var(--fs-600);
+  line-height: 0.9;
+  font-size: clamp(var(--fs-400), 1.5vmax, var(--fs-700));
 }
 
 .main-nav .nav__list {
   display: flex;
-  gap: 5rem;
+  gap: clamp(1rem, 4vmax ,5rem);
   list-style: none;
 }
 
@@ -237,7 +237,7 @@ body {
 
 /* === HERO SECTION === */
 .hero {
-  max-width: 1200px;
+  max-width: clamp(300px, 90vw, 1200px);
   margin: 3rem auto;
   text-align: center;
 }
@@ -253,7 +253,7 @@ body {
 
 .hero__gallery {
   display: grid;
-  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  grid-template-columns: repeat(6, minmax(5vw, 1fr));
   grid-template-rows: repeat(2, 300px);
   border: 1rem solid var(--clr-neutral-100);
 }
@@ -308,7 +308,7 @@ body {
 }
 
 .banner__container {
-  max-width: 1200px;
+  max-width: clamp(300px, 90vw, 1200px);
   display: flex;
   align-items: center;
   gap: 5rem;
@@ -405,7 +405,7 @@ body {
 
 /* === CARD GALLERY === */
 .card-grid-wrapper {
-  max-width: 1200px;
+  max-width: clamp(300px, 90vw, 1200px);
   margin: 3rem auto;
 }
 
@@ -521,7 +521,7 @@ body {
 } 
 
 .footer__container {
-  max-width: 1200px;
+  max-width: clamp(300px, 90vw, 1200px);
   display: flex;
   justify-content: space-between;
   align-items: center;
