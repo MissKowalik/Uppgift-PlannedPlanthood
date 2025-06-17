@@ -187,7 +187,7 @@ body {
 }
 
 .main-nav {
-  max-width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1200px);
   color: var(--clr-green-400);
   font-size: clamp(var(--fs-400), 1.5vmax, var(--fs-700));
   font-weight: var(--fw-500);
@@ -237,7 +237,7 @@ body {
 
 /* === HERO SECTION === */
 .hero {
-  max-width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1200px);
   margin: 3rem auto;
   text-align: center;
 }
@@ -307,16 +307,17 @@ body {
 }
 
 .banner__container {
-  max-width: clamp(300px, 90vw, 1200px);
-  display: flex;
+  container-type: inline-size;
+  width: clamp(300px, 90vw, 1200px);
+  display: grid;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   justify-content: center;
-  padding: 0 1rem;
+  text-align: center;
 }
 
 .grid-elements {
-  max-width: 60ch;
+  max-width:60ch;
   display: grid;
 }
 
@@ -328,6 +329,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  order: -1;
+  margin: auto;
 }
 
 .banner__icon img {
@@ -339,6 +342,7 @@ body {
 /* newsletter banner section */
 .banner__container h2 {
   max-width: 20ch;
+  margin-inline: auto;
   margin-bottom: 1rem;
 }
 
@@ -380,6 +384,48 @@ body {
   background-color: var(--clr-green-800);
 }
 
+/* Tablet layout */
+@container (60ch < width < 99ch) {
+  .grid-elements, 
+  .banner__container h2,
+  .form {
+    width: clamp(300px, 90cqw, 700px);   
+    max-width: 90cqw;
+    margin-inline: auto;
+  }
+}
+
+/* Desktop layout */
+@container (width > 100ch) {
+
+  .banner__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .grid-elements {
+    max-width: 60ch;
+    display: grid;
+  }
+
+  .banner__icon {
+    margin: 0;
+    order: +1;
+  }
+
+  .banner__container h2 {
+    max-width: 20ch;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .form {
+      max-width: 60ch;
+  }
+}
+
 
 /* previous crops banner section */
 .grid-elements .button {
@@ -404,7 +450,7 @@ body {
 
 /* === CARD GALLERY === */
 .card-grid-wrapper {
-  max-width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1200px);
   margin: 3rem auto;
 }
 
@@ -520,7 +566,7 @@ body {
 } 
 
 .footer__container {
-  max-width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1200px);
   display: flex;
   justify-content: space-between;
   align-items: center;
