@@ -299,6 +299,8 @@ body {
 
 /* === BANNER SECTIONS === */
 .banner {
+  container-name: banner;
+  container-type: inline-size;
   background: var(--clr-neutral-100);
   width: 100%;
   display: flex;
@@ -307,7 +309,6 @@ body {
 }
 
 .banner__container {
-  container-type: inline-size;
   width: clamp(300px, 90vw, 1200px);
   display: grid;
   align-items: center;
@@ -385,7 +386,7 @@ body {
 }
 
 /* Tablet layout */
-@container (60ch < width < 99ch) {
+@container (60ch < width < 99.99999ch) {
   .grid-elements, 
   .banner__container h2,
   .form {
@@ -396,7 +397,7 @@ body {
 }
 
 /* Desktop layout */
-@container (width > 100ch) {
+@container banner (width > 100ch) {
 
   .banner__container {
     display: flex;
