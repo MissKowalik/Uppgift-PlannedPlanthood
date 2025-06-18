@@ -182,6 +182,8 @@ body {
 
 /* === HEADER STYLES === */
 .site-header {
+  container-name: header;
+  container-type: inline-size;
   background-color: var(--clr-neutral-100);
   width: 100%;
 }
@@ -189,7 +191,7 @@ body {
 .main-nav {
   width: clamp(300px, 90vw, 1080px);
   color: var(--clr-green-400);
-  font-size: clamp(var(--fs-400), 1.5vmax, var(--fs-700));
+  font-size: clamp(var(--fs-400), 1.5vmax, var(--fs-600));
   font-weight: var(--fw-500);
   text-transform: uppercase;
   display: flex;
@@ -208,7 +210,7 @@ body {
 }
 
 .logo img {
-  width: clamp(1rem, 3vmax, 4rem);
+  width: clamp(2rem, 3vmax, 3.5rem);
   height: auto;
   border-radius: 50%;
   background: var(--clr-green-400);
@@ -217,13 +219,16 @@ body {
 .logo__title {
   text-transform: uppercase;
   line-height: 0.9;
-  font-size: clamp(var(--fs-400), 1.5vmax, var(--fs-700));
+  
 }
 
-.main-nav .nav__list {
-  display: flex;
-  gap: clamp(1rem, 4vmax ,5rem);
+.nav__list {
+  display: none;
   list-style: none;
+}
+
+.hamburger-icon {
+  width: clamp(2rem, 3vmax, 3.5rem);
 }
 
 .main-nav .nav__item a:hover,
@@ -232,7 +237,18 @@ body {
   text-decoration: none;
 }
 
+/* header desktop layout - showing navigation links and hides hamburger icon */
+@container header (width > 100ch) {
+  .nav__list {
+  display: flex;
+  gap: clamp(1rem, 4vmax ,5rem);
+  list-style: none;
+  }
 
+  .hamburger-icon {
+    display: none;
+  }
+}
 
 
 /* === HERO SECTION === */
@@ -382,7 +398,7 @@ body {
 }
 
 
-/* === BANNER SECTIONS === */
+/* === BANNER SECTIONS - Reusable styles === */
 .banner {
   container-name: banner;
   container-type: inline-size;
@@ -432,7 +448,7 @@ body {
 }
 
 
-/* Tablet layout */
+/* Tablet layout - still vertical, but wider heading and form */
 @container banner (60ch < width < 99.99999ch) {
   .grid-elements, 
   .banner__container h2,
@@ -443,7 +459,7 @@ body {
   }
 }
 
-/* Desktop layout */
+/* Desktop layout - horizontal layout */
 @container banner (width > 100ch) {
 
   .banner__container {
@@ -486,7 +502,9 @@ body {
   }
 }
 
-/* newsletter form */
+
+/* === BANNER SECTIONS - specfic styles === */
+/* newsletter form styles */
 .form {
   display: flex;
   background-color: var(--clr-neutral-100);
@@ -525,7 +543,7 @@ body {
   background-color: var(--clr-green-800);
 }
 
-/* previous crops button */
+/* previous crops styles*/
 .grid-elements .button {
   justify-self: end;
   background-color: var(--clr-green-400);
@@ -588,6 +606,26 @@ body {
 
 }
 
+.card__footer {
+  display: flex;
+}
+
+.card__profile {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--clr-neutral-900);
+  border-radius: 50%;
+}
+
+.card__meta {
+  display: grid;
+  margin-left: 0.5rem;
+}
+
+.card__meta span {
+  font-weight: var(--fw-500);
+}
+
 /* card data-tags */
 .card__tag[data-tag="robust"] {
   background-color: var(--clr-robust);
@@ -633,25 +671,7 @@ body {
   background-color: var(--clr-fast);
 }
 
-.card__footer {
-  display: flex;
-}
 
-.card__profile {
-  width: 42px;
-  height: 42px;
-  border: 1px solid var(--clr-neutral-900);
-  border-radius: 50%;
-}
-
-.card__meta {
-  display: grid;
-  margin-left: 0.5rem;
-}
-
-.card__meta span {
-  font-weight: var(--fw-500);
-}
 
 
 /* === EMPTY DIV === */
