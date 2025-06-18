@@ -187,7 +187,7 @@ body {
 }
 
 .main-nav {
-  width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1080px);
   color: var(--clr-green-400);
   font-size: clamp(var(--fs-400), 1.5vmax, var(--fs-700));
   font-weight: var(--fw-500);
@@ -242,7 +242,7 @@ body {
 }
 
 .hero__wrapper {
-  width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1080px);
   margin: 3rem auto;
   text-align: center;
 }
@@ -395,7 +395,7 @@ body {
 }
 
 .banner__container {
-  width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1080px);
   display: grid;
   align-items: center;
   gap: 2rem;
@@ -458,8 +458,20 @@ body {
     display: grid;
   }
 
+  .previous-crops {
+    justify-content: start;
+    text-align: left;
+  }
+
+  .previous-crops h2 {
+    margin-inline: 0;
+  }
+
   .banner__icon {
     margin: 0;
+  }
+
+  .newsletter-icon {
     order: +1;
   }
 
@@ -474,7 +486,7 @@ body {
   }
 }
 
-/* newsletter banner section */
+/* newsletter form */
 .form {
   display: flex;
   background-color: var(--clr-neutral-100);
@@ -513,7 +525,7 @@ body {
   background-color: var(--clr-green-800);
 }
 
-/* previous crops banner section */
+/* previous crops button */
 .grid-elements .button {
   justify-self: end;
   background-color: var(--clr-green-400);
@@ -536,13 +548,13 @@ body {
 
 /* === CARD GALLERY === */
 .card-grid-wrapper {
-  width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1080px);
   margin: 3rem auto;
 }
 
 .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(27ch, 1fr));
   gap: 1rem;
   list-style: none;
   padding: 0;
@@ -572,7 +584,7 @@ body {
   font-weight: var(--fw-500);
   text-transform: uppercase;
   border-radius: 1rem;
-  padding: .25rem .5rem;
+  padding: .5rem .75rem;
 
 }
 
@@ -621,18 +633,25 @@ body {
   background-color: var(--clr-fast);
 }
 
-.card__meta {
+.card__footer {
   display: flex;
 }
 
 .card__profile {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border: 1px solid var(--clr-neutral-900);
   border-radius: 50%;
 }
 
+.card__meta {
+  display: grid;
+  margin-left: 0.5rem;
+}
 
+.card__meta span {
+  font-weight: var(--fw-500);
+}
 
 
 /* === EMPTY DIV === */
@@ -652,7 +671,7 @@ body {
 } 
 
 .footer__container {
-  width: clamp(300px, 90vw, 1200px);
+  width: clamp(300px, 90vw, 1080px);
   display: flex;
   justify-content: space-between;
   align-items: center;
