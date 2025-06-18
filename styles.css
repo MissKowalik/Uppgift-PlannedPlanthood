@@ -538,10 +538,13 @@ body {
   height: 2rem;
   text-transform: uppercase;
   cursor: pointer;
+  border: 1px solid var(--clr-green-400);
 }
 
 .form button:hover {
-  background-color: var(--clr-green-800);
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-green-400);
+  border: 1px solid var(--clr-green-400);
 }
 
 /* previous crops styles*/
@@ -556,10 +559,13 @@ body {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  border: 1px solid var(--clr-neutral-100);
 }
 
 .grid-elements .button:hover {
-  background-color: var(--clr-green-800);
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-green-400);
+  border: 1px solid var(--clr-green-400);
 }
 
 
@@ -728,11 +734,6 @@ body {
 .footer__about .logo__title {
   font-size: var(--fs-500);
   font-weight: var(--fw-500);
-}
-
-.footer__about .logo:hover {
-  text-decoration: none;
-  color: var(--clr-green-800)
 }
 
 .footer__about address {
