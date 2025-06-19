@@ -251,6 +251,8 @@ body {
 }
 
 
+
+
 /* === HERO SECTION === */
 .hero {
   container-name: hero;
@@ -337,6 +339,8 @@ body {
     grid-row: 2 / 3;
   }
 }
+
+
 
 
 /* === BANNER SECTIONS - Reusable styles === */
