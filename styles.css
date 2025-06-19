@@ -720,9 +720,4 @@ body {
   .footer__nav-list a {
     color: var(--clr-neutral-100);
   }
-
-  .footer__nav-list a:hover {
-    text-decoration: none;
-    color: var(--clr-green-800)
-  }
 }
