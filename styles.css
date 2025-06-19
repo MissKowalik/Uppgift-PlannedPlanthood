@@ -742,6 +742,10 @@ body {
   line-height: 2;
 }
 
+.footer__about address a {
+  color: var(--clr-neutral-100);
+}
+
 .footer__nav {
   display: none;
 }
