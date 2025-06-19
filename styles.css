@@ -209,11 +209,10 @@ body {
   color: inherit;
 }
 
-.logo img {
+.logo svg {
   width: clamp(2rem, 3vmax, 3.5rem);
   height: auto;
   border-radius: 50%;
-  background: var(--clr-green-400);
 }
 
 .logo__title {
