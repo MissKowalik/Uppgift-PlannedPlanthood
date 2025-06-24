@@ -228,11 +228,14 @@ body {
   list-style: none;
 }
 
+.nav__list a {
+  padding: 1rem 2rem;
+}
+
 .hamburger-icon {
   width: clamp(2rem, 3vmax, 3.5rem);
 }
 
-.main-nav .nav__item a:hover,
 .main-nav a:hover {
   color: var(--clr-green-800);
   text-decoration: none;
@@ -242,9 +245,15 @@ body {
 @container header (width > 100ch) {
   .nav__list {
     display: flex;
-    gap: clamp(1rem, 4vmax ,5rem);
+
     list-style: none;
   }
+
+.main-nav a:hover {
+  background-color: var(--clr-green-400);
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
 
   .hamburger-icon {
     display: none;
